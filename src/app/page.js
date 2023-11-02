@@ -1,27 +1,26 @@
 'use client'
 
-import styles from './page.module.css'
-
-const getWeather = async () => {
-  const response = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=27.0380421&lon=88.262847&units=metric&appid=772d63bf896d0e4db07e363ba179e12c")
-  const responseString= await response.text();
-  const parsedJson = JSON.parse(responseString);
-  return parsedJson;
-}
-
-const comp = getWeather().then((jsonData) => {
-  return <div className={styles.weather}>
-    {JSON.stringify(jsonData.main)}
-  </div>
-}); 
-
 export default function Home() {
   return (
     <>
       <main className={styles.main}>
-        <div> 
-          {comp}
-          <iframe src="https://maps.google.com/maps?q=Darjeeling&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" width={1000} height={800} allowFullScreen />
+        <div className="home">
+          <div className="hero">
+            <div className="hero-title">
+              Bhromon
+            </div>
+            <div className="hero-subtitle">
+              Tour the world, without any hassle
+            </div>
+            <div className="banner flex">
+              <div className="banner-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </div>
+              <button className="banner starter">
+                Get Started
+              </button>
+            </div>
+          </div>
         </div>
       </main>
     </>
