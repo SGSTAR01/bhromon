@@ -135,14 +135,66 @@ export default function Darjeeling() {
                         </div>
                     </div>
                 </div>
+                {/* TOP PLACES TO VISIT */}
+                <div className='top-place'>
+                    <div className="card">
+                        <div className="card-header">
+                            TOP PLACES TO VISIT
+                        </div>
+                        <div className="card-body">
+                            {/* inside card */}
+                            <div className='ghoom'>
+                                <div class="card inside-card ">
+                                    <Image src={Kanchanjangha} class="card-img-top" alt="..." />
+                                    <div class="card-body-inside">
+                                        <h5 class="card-title">BATASHIA LOOP</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua. Dui id ornare arcu odio ut sem.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ghoom'>
+                                <div class="card inside-card ">
+                                    <Image src={Kanchanjangha} class="card-img-top" alt="..." />
+                                    <div class="card-body-inside">
+                                        <h5 class="card-title">GHOOM</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua. Dui id ornare arcu odio ut sem.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ghoom'>
+                                <div class="card inside-card ">
+                                    <Image src={Kanchanjangha} class="card-img-top" alt="..." />
+                                    <div class="card-body-inside">
+                                        <h5 class="card-title">TIGER HILL</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua. Dui id ornare arcu odio ut sem.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="card-footer  text-center">
+                            <button type='button' className='btn btn-outline-secondary'> See More </button>
+                        </div>
+                    </div>
+                </div>
 
 
-
-            </article>
+            </article >
 
             {/* for body */}
 
-        </div>
+        </div >
     )
 }
 

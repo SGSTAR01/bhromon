@@ -164,12 +164,14 @@
     align-items: center;
 }
 
-article .card {
+article .body-hill .card {
     /* background: #000; */
     border: none;
+    width: 80%;
+
 }
 
-article .card .card-body {
+article .body-hill .card .card-body {
     /* background: #000; */
     width: auto;
     margin: 0;
@@ -177,22 +179,68 @@ article .card .card-body {
     justify-content: left;
 }
 
-article .card .card-icon {
+article .body-hill .card .card-icon {
     width: auto;
 }
 
-article .card .card-icon .card-img-left {
+article .body-hill .card .card-icon .card-img-left {
     height: 14rem;
     width: 14rem;
     border-radius: 50%;
 }
 
-article .card .card-text {
+article .body-hill .card .card-text {
     margin-left: 4rem;
     margin-top: 1.5rem;
     text-align: justify;
 }
 
-article .card .card-text .card-title {
+article .body-hill .card .card-text .card-title {
     margin-bottom: 1.5rem;
+}
+
+article .top-place {
+    margin-top: 2.6rem;
+    /* display: block; */
+}
+
+article .top-place .card {
+    border: none;
+    /* background: none; */
+}
+
+article .top-place .card .card-header {
+    /* background: none; */
+    border: none;
+    font-size: 38px;
+}
+
+article .top-place .card .card-body {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+article .top-place .card .card-body .inside-card .card-img-top {
+    height: 16rem;
+}
+
+article .top-place .card .card-body .ghoom {
+    width: 22rem;
+    height: auto;
+}
+
+article .top-place .card .card-body .inside-card {
+    box-shadow: 3px 5px 8px gray;
+    padding: 1rem;
+}
+
+article .top-place .card .card-body .inside-card .card-body-inside {
+    margin-top: 2rem;
+}
+
+article .top-place .card .card-footer {
+    margin-top: 3rem;
+    background: none;
+    border: none;
 }
