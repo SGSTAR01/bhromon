@@ -1,12 +1,13 @@
 import hill from './../assets/img/hill-black.svg'
 import './../style/darjeeling/index.css'
 import Image from 'next/image'
-import weather from './../assets/img/rainy.png'
-
+import iconMap from '../consts'
+import { log } from 'console'
 const getWeather = async () => {
     const response = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=27.0380421&lon=88.262847&units=metric&appid=772d63bf896d0e4db07e363ba179e12c")
     const responseString= await response.text();
     const parsedJson = JSON.parse(responseString);
+    console.log(parsedJson);
     return parsedJson;
   }
   
@@ -15,11 +16,11 @@ const getWeather = async () => {
       <div class="card">
                 <div class="card-body">
                     <div className='card-icon'>
-                        <Image src={weather} height={50}/>
+                        <Image src={iconMap.get(jsonData.weather[0].description)} height={50}/>
                     </div>
                     <div className='card-text'>
-                        <h5 class="card-title">{jsonData.main.temp} °C</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Rainy</h6>
+                        <h5 className="card-title">{jsonData.main.temp} °C</h5>
+                        <h6 className="card-subtitle mb-2 text-body-secondary">{jsonData.weather[0].description}</h6>
                     </div>
                 </div>
             </div>
