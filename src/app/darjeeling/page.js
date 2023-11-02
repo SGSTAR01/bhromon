@@ -1,9 +1,11 @@
 import hill from './../assets/img/hill-black.svg'
 import './../style/darjeeling/index.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Image from 'next/image'
 import Time from './../assets/img/clock.png'
 import Airport from './../assets/img/airport.png'
 import Train from './../assets/img/train.png'
+import Kanchanjangha from './../assets/img/kanchanjangha.jpg'
 
 import iconMap from '../consts'
 import { log } from 'console'
@@ -49,7 +51,9 @@ export default function Darjeeling() {
         <div className='container-fluid'>
             <div className='hero'>
                 {/* This card For Wather */}
-                {comp}
+                <div className='left-group'>
+                    {comp}
+                </div>
                 {/* This div for right side group */}
                 <div className='right-group'>
                     {/* for  timing to visit*/}
@@ -57,7 +61,7 @@ export default function Darjeeling() {
                         <div className="card">
                             <div class="card-body">
                                 <div className='card-icon'>
-                                    <Image src={Airport} height={40} />
+                                    <Image src={Airport} className='card-icon-img' />
                                 </div>
                                 <div className="card-text">
                                     <h5 className="card-title">DISTANCE FROM AIRPORT</h5>
@@ -72,7 +76,7 @@ export default function Darjeeling() {
                         <div className="card">
                             <div class="card-body">
                                 <div className='card-icon'>
-                                    <Image src={Train} height={40} />
+                                    <Image src={Train} className='card-icon-img' />
                                 </div>
                                 <div className="card-text">
                                     <h5 className="card-title">DISTANCE FROM RAILWAY</h5>
@@ -87,7 +91,7 @@ export default function Darjeeling() {
                         <div className="card">
                             <div class="card-body">
                                 <div className='card-icon'>
-                                    <Image src={Time} height={40} />
+                                    <Image src={Time} className='card-icon-img' />
                                 </div>
                                 <div className="card-text">
                                     <h5 className="card-title">BEST TIME TO VISIT</h5>
@@ -98,70 +102,42 @@ export default function Darjeeling() {
                         </div>
                     </div>
                 </div>
-                {/* <div className='hero-group'> */}
                 <div className="main-text">
                     <h2>DARJEELING</h2>
                 </div>
                 <div className='main-img'>
-                    <Image src={hill} className='hill-img' width={200} height={200} />
+                    <Image src={hill} className='hill-img' />
                 </div>
-                {/* </div> */}
 
 
             </div>
 
-            <article className="container">
-                <div className="card" >
-                    <img src="..." className="card-img-top" alt="..." />
-                    <div className="card-body">
-                        <h5 className="card-title">Card title</h5>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-
-                    <div className="card-body">
-                        <a href="#" className="card-link">Card link</a>
-                        <a href="#" className="card-link">Another link</a>
-                    </div>
-                </div>
-                <div className="card" >
-                    <img src="..." className="card-img-top" alt="..." />
-                    <div className="card-body">
-                        <h5 className="card-title">Card title</h5>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-
-                    <div className="card-body">
-                        <a href="#" className="card-link">Card link</a>
-                        <a href="#" className="card-link">Another link</a>
+            <article className='container'>
+                <div className='body-hill'>
+                    <div className='card'>
+                        <div class="card-body">
+                            <div className='card-icon'>
+                                <Image src={Kanchanjangha} className='card-img-left' />
+                            </div>
+                            <div className='card-text'>
+                                <h5 className="card-title"> Lorem Ipsum</h5>
+                                <h6 className="card-subtitle mb-2 text-body-secondary">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore
+                                    magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat. Duis aute irure dolor in reprehenderit
+                                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                                    qui officia deserunt mollit anim id est laborum.
+                                </h6>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div id="carouselExampleIndicators" class="carousel slide">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="..." class="d-block w-100" alt="..." />
-                        </div>
-                        <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="..." />
-                        </div>
-                        <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="..." />
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
+
+
             </article>
 
             {/* for body */}
