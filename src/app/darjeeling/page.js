@@ -1,14 +1,14 @@
 import hill from './../assets/img/hill-black.svg'
 import './../style/darjeeling/index.css'
 import Image from 'next/image'
-<<<<<<< HEAD
+// <<<<<<< HEAD
 import weather from './../assets/img/rainy.png'
 import Time from './../assets/img/clock.png'
 
-=======
+// =======
 import iconMap from '../consts'
 import { log } from 'console'
->>>>>>> be6c02c312992c627dca3e04c6ae2bebc2c5d947
+// >>>>>>> be6c02c312992c627dca3e04c6ae2bebc2c5d947
 const getWeather = async () => {
     const response = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=27.0380421&lon=88.262847&units=metric&appid=772d63bf896d0e4db07e363ba179e12c")
     const responseString = await response.text();
@@ -19,8 +19,7 @@ const getWeather = async () => {
 
 const comp = getWeather().then((jsonData) => {
     return <div className={"weather"}>
-<<<<<<< HEAD
-        <div className="card">
+        {/* <div className="card">
             <div className="card-body">
                 <div className='card-icon'>
                     <Image src={weather} height={50} />
@@ -28,17 +27,18 @@ const comp = getWeather().then((jsonData) => {
                 <div className='card-text'>
                     <h5 className="card-title">{jsonData.main.temp} °C</h5>
                     <h6 className="card-subtitle mb-2 text-body-secondary">Rainy</h6>
-=======
-      <div class="card">
-                <div class="card-body">
-                    <div className='card-icon'>
-                        <Image src={iconMap.get(jsonData.weather[0].description)} height={50}/>
-                    </div>
-                    <div className='card-text'>
-                        <h5 className="card-title">{jsonData.main.temp} °C</h5>
-                        <h6 className="card-subtitle mb-2 text-body-secondary">{jsonData.weather[0].description}</h6>
-                    </div>
->>>>>>> be6c02c312992c627dca3e04c6ae2bebc2c5d947
+                    
+                </div>
+            </div>
+        </div> */}
+        <div class="card">
+            <div class="card-body">
+                <div className='card-icon'>
+                    <Image src={iconMap.get(jsonData.weather[0].description)} height={50} />
+                </div>
+                <div className='card-text'>
+                    <h5 className="card-title">{jsonData.main.temp} °C</h5>
+                    <h6 className="card-subtitle mb-2 text-body-secondary">{jsonData.weather[0].description}</h6>
                 </div>
             </div>
         </div>
@@ -49,32 +49,57 @@ const comp = getWeather().then((jsonData) => {
 export default function Darjeeling() {
     return (
         <div className='container-fluid'>
-            {/* This card For Wather */}
-            {comp}
-            {/* <div className='hero-group'> */}
-            <div className='main-text'>
-                <h2>DARJEELING</h2>
-            </div>
-            <div className='main-img'>
-                <Image src={hill} className='hill-img' width={200} height={200} />
-            </div>
-            {/* </div> */}
-
-            {/* for  timing to visit*/}
-            <div className='visit-timing'>
-                <div class="card">
-                    <div class="card-body">
-                        <div className='card-icon'>
-                            <Image src={Time} height={50} />
-                        </div>
-                        <div className='card-text'>
-                            <h5 className="card-title">BEST TIME TO VISIT</h5>
-                            <h6 className="card-subtitle mb-2 text-body-secondary">
-                                APR - AUG</h6>
+            <div className='hero'>
+                {/* This card For Wather */}
+                {comp}
+                {/* for  timing to visit*/}
+                <div className='visit-timing'>
+                    <div class="card">
+                        <div class="card-body">
+                            <div className='card-icon'>
+                                <Image src={Time} height={40} />
+                            </div>
+                            <div className='card-text'>
+                                <h5 className="card-title">BEST TIME TO VISIT</h5>
+                                <h6 className="card-subtitle mb-2 text-body-secondary">
+                                    APR - AUG</h6>
+                            </div>
                         </div>
                     </div>
                 </div>
+                {/* <div className='hero-group'> */}
+                <div className='main-text'>
+                    <h2>DARJEELING</h2>
+                </div>
+                <div className='main-img'>
+                    <Image src={hill} className='hill-img' width={200} height={200} />
+                </div>
+                {/* </div> */}
+
+
             </div>
+
+            <article>
+                <div className="card" >
+                    <img src="..." className="card-img-top" alt="..." />
+                    <div className="card-body">
+                        <h5 className="card-title">Card title</h5>
+                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <ul className="list-group list-group-flush">
+                        <li className="list-group-item">An item</li>
+                        <li className="list-group-item">A second item</li>
+                        <li className="list-group-item">A third item</li>
+                    </ul>
+                    <div className="card-body">
+                        <a href="#" className="card-link">Card link</a>
+                        <a href="#" className="card-link">Another link</a>
+                    </div>
+                </div>
+            </article>
+
+            {/* for body */}
+
         </div>
     )
 }
