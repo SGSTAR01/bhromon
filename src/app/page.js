@@ -13,7 +13,7 @@ const comp = getWeather().then((jsonData) => {
   return <div className={styles.weather}>
     {JSON.stringify(jsonData.main)}
   </div>
-});
+}); 
 
 export default function Home() {
   return (

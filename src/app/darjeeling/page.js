@@ -1,18 +1,25 @@
 import hill from './../assets/img/hill-black.svg'
 import './../style/darjeeling/index.css'
 import Image from 'next/image'
+<<<<<<< HEAD
 import weather from './../assets/img/rainy.png'
 import Time from './../assets/img/clock.png'
 
+=======
+import iconMap from '../consts'
+import { log } from 'console'
+>>>>>>> be6c02c312992c627dca3e04c6ae2bebc2c5d947
 const getWeather = async () => {
     const response = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=27.0380421&lon=88.262847&units=metric&appid=772d63bf896d0e4db07e363ba179e12c")
     const responseString = await response.text();
     const parsedJson = JSON.parse(responseString);
+    console.log(parsedJson);
     return parsedJson;
 }
 
 const comp = getWeather().then((jsonData) => {
     return <div className={"weather"}>
+<<<<<<< HEAD
         <div className="card">
             <div className="card-body">
                 <div className='card-icon'>
@@ -21,6 +28,17 @@ const comp = getWeather().then((jsonData) => {
                 <div className='card-text'>
                     <h5 className="card-title">{jsonData.main.temp} °C</h5>
                     <h6 className="card-subtitle mb-2 text-body-secondary">Rainy</h6>
+=======
+      <div class="card">
+                <div class="card-body">
+                    <div className='card-icon'>
+                        <Image src={iconMap.get(jsonData.weather[0].description)} height={50}/>
+                    </div>
+                    <div className='card-text'>
+                        <h5 className="card-title">{jsonData.main.temp} °C</h5>
+                        <h6 className="card-subtitle mb-2 text-body-secondary">{jsonData.weather[0].description}</h6>
+                    </div>
+>>>>>>> be6c02c312992c627dca3e04c6ae2bebc2c5d947
                 </div>
             </div>
         </div>

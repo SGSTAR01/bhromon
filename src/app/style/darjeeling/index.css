@@ -22,8 +22,14 @@
     margin-right: 1rem;
 }
 .card {
+<<<<<<< HEAD
     box-shadow: 1px 4px 6px rgb(149, 149, 149);
     padding: 0.2rem 2.8rem;
+=======
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgb(149, 149, 149);
+    padding: 0 1rem;
+>>>>>>> be6c02c312992c627dca3e04c6ae2bebc2c5d947
     margin-top: 1rem;
     margin-left: 1rem;
     border-radius: 20px;
