@@ -1,14 +1,11 @@
 import hill from './../assets/img/hill-black.svg'
 import './../style/darjeeling/index.css'
 import Image from 'next/image'
-// <<<<<<< HEAD
 import weather from './../assets/img/rainy.png'
 import Time from './../assets/img/clock.png'
 
-// =======
 import iconMap from '../consts'
 import { log } from 'console'
-// >>>>>>> be6c02c312992c627dca3e04c6ae2bebc2c5d947
 const getWeather = async () => {
     const response = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=27.0380421&lon=88.262847&units=metric&appid=772d63bf896d0e4db07e363ba179e12c")
     const responseString = await response.text();
@@ -79,18 +76,14 @@ export default function Darjeeling() {
 
             </div>
 
-            <article>
+            <article className="container">
                 <div className="card" >
                     <img src="..." className="card-img-top" alt="..." />
                     <div className="card-body">
                         <h5 className="card-title">Card title</h5>
                         <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
-                    <ul className="list-group list-group-flush">
-                        <li className="list-group-item">An item</li>
-                        <li className="list-group-item">A second item</li>
-                        <li className="list-group-item">A third item</li>
-                    </ul>
+                    
                     <div className="card-body">
                         <a href="#" className="card-link">Card link</a>
                         <a href="#" className="card-link">Another link</a>

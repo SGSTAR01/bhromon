@@ -95,7 +95,9 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: #8b8b8b;
+    mix-blend-mode: multiply;
+    filter: contrast(1);
+    /* background: #8b8b8b; */
 }
 
 
