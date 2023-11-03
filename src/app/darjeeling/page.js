@@ -12,7 +12,6 @@ import Store from './../assets/img/store.png'
 import Restaurant from './../assets/img/restaurant.png'
 
 import iconMap from '../consts'
-import { log } from 'console'
 const getWeather = async () => {
     const response = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=27.0380421&lon=88.262847&units=metric&appid=772d63bf896d0e4db07e363ba179e12c")
     const responseString = await response.text();

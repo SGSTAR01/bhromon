@@ -1,0 +1,17 @@
+.logo {
+    height: 100px;
+}
+
+.navbar {
+    .button-section {
+        a {
+            text-decoration: none;
+            color: rgb(115, 115, 115);
+        }
+    
+        a:hover {
+            text-decoration: none;
+            color: rgb(50,50,50);
+        }
+    }
+}
