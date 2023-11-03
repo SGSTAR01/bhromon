@@ -45,21 +45,7 @@ Creating a structured format for a software project report or presentation is es
 9. Implementation:
    - Programming Languages : HTML, CSS , JAVASCRIPT
    - FrameWorks : Next.JS
-   - Backend : FireBas
-
-10. User Documentation:
-    - First, run the development server:
-
-    bash
-    npm run dev
-    # or
-    yarn dev
-    # or
-    pnpm dev
-    # or
-    bun dev
-    
-
+   - Backend : FireBase
 11. Conclusion:
     - In conclusion, our website plays a pivotal role in shaping the travel experiences of visitors to this culturally rich, diverse, and enchanting nation. The kaleidoscope of India's heritage, natural beauty, and traditions offers a vast canvas for exploration, and such companies serve as the bridge between travelers and the treasures that await them.
     With a commitment to celebrating India's rich cultural tapestry, showcasing its natural beauty, and promoting sustainable, inclusive, and memorable travel experiences, these tourism companies become the custodians of an extraordinary journey. They offer tailor-made itineraries, professional guidance, and an array of services that cater to the desires and preferences of a global audience.
