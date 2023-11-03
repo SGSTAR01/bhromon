@@ -3,7 +3,7 @@
 export default function Home() {
   return (
     <>
-      <main className={styles.main}>
+      <main className="main">
         <div className="home">
           <div className="hero">
             <div className="hero-title">

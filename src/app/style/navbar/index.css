@@ -1,0 +1,15 @@
+.logo {
+    height: 50px;
+}
+
+.button-section {
+    a {
+        text-decoration: none;
+        color: rgb(115, 115, 115);
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: rgb(50,50,50);
+    }
+}
