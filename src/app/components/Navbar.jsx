@@ -42,7 +42,7 @@ const Navbar = () => {
         </div>
         <div className="button-section mx-5" style={{justifyContent: "center", display: "flex"}}>
           <a href="/" className="btn" style={{marginTop: "auto", marginBottom: "auto"}}>Home</a>
-          <a href="/" className="btn" style={{marginTop: "auto", marginBottom: "auto"}}>Locations</a>
+          <a href="/darjeeling" className="btn" style={{marginTop: "auto", marginBottom: "auto"}}>Locations</a>
           <a href="/" className="btn" style={{marginTop: "auto", marginBottom: "auto"}}>Help</a>
         </div>
         {!user ? <div style={{ position: "absolute", right: 50, top: 30}}>
