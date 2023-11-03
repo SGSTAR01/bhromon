@@ -244,3 +244,106 @@ article .top-place .card .card-footer {
     background: none;
     border: none;
 }
+
+article .map-area {
+    margin-top: 3rem;
+}
+
+article .map-area .card {
+    border: none;
+}
+
+article .map-area .card .card-header {
+    /* background: none; */
+    border: none;
+    font-size: 38px;
+}
+
+article .map-area .card .card-body {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: left;
+    position: relative;
+}
+
+article .map-area .card .card-body iframe {
+    /* border: 2px solid red; */
+    width: 90%;
+    height: 70vh;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px gray;
+    margin-left: 1rem;
+
+}
+
+article .map-area .card-body .hospital {
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 999;
+    /* background: gray; */
+    /* border: 2px solid silver; */
+    box-shadow: 1px 1px 4px gray;
+    cursor: pointer;
+}
+
+article .map-area .card-body .transport {
+    position: absolute;
+    top: 10rem;
+    right: 2rem;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 999;
+    /* background: gray; */
+    /* border: 2px solid silver; */
+    box-shadow: 1px 1px 4px gray;
+    cursor: pointer;
+}
+
+article .map-area .card-body .popular-store {
+    position: absolute;
+    top: 16rem;
+    right: 2rem;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 999;
+    /* background: gray; */
+    /* border: 2px solid silver; */
+    box-shadow: 1px 1px 4px gray;
+    cursor: pointer;
+}
+
+article .map-area .card-body .restaurent {
+    position: absolute;
+    top: 22rem;
+    right: 2rem;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 999;
+    /* background: gray; */
+    /* border: 2px solid silver; */
+    box-shadow: 1px 1px 4px gray;
+    cursor: pointer;
+}
+
+article .map-area .card-body .over-map-icon {
+    height: 3.5rem;
+    width: 3.5rem;
+    padding: 2px;
+    background: none;
+}
+
+article .user {
+    margin-top: 4rem;
+}
+
+article .user .card {
+    border: none;
+}
+
+article .user .card .card-header {
+    border: none;
+    font-size: 38px;
+}
