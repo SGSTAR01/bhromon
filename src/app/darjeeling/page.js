@@ -59,6 +59,7 @@ export default function Darjeeling() {
     return (
 
         <>
+            <title>Darjeeling</title>
             <div className='container-fluid'>
                 <div className='hero'>
                     {/* This card For Wather */}
@@ -246,7 +247,7 @@ export default function Darjeeling() {
                                                 Loved my visit and experience there
                                                 Amazing view of Kanchenjunga and the sunrise we got from there
                                                 Will cherish the moment for lifetime.
-                                                <br/>
+                                                <br />
                                                 Lovely place to see the sleeping Buddha. Kanchenjunga view is awesome. Lovely coffee to accompany. Must visit place
                                             </p>
                                         </div>
