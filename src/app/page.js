@@ -39,22 +39,13 @@ export default function Home() {
 
   return (
     <>
-<<<<<<< HEAD
-      <main >
-=======
       <main className="main">
->>>>>>> ae3a8901260c2cbad1999e9a9b8b41604a74105b
         <div className="home">
           <div className="banner">
             <Image src={logo} height={500} className="logo" />
             <div className="banner flex">
-<<<<<<< HEAD
-              <div className="banner-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-=======
               <div className="subtitle">
                 GO AROUND THE WORLD, WITHOUT HASSLES
->>>>>>> ae3a8901260c2cbad1999e9a9b8b41604a74105b
               </div>
             </div>
           </div>
