@@ -27,7 +27,7 @@ const getWeather = async () => {
 }
 
 const comp = getWeather().then((jsonData) => {
-    return <div className={"weather"}>
+    return <div className='weather'>
         {/* <div className="card">
             <div className="card-body">
                 <div className='card-icon'>
