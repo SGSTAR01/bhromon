@@ -35,32 +35,32 @@ const Navbar = () => {
   }, [user]);
 
   return (
-    <div className="h-20 w-full border-b-2 items-center justify-between p-2">
+    <div className="h-20 w-full border-b-2 items-center justify-between p-2 sticky-top ">
       <div className="flex">
         <div className="flex logo">
           <Image src={logo} height={100} />
         </div>
-        <div className="button-section mx-5" style={{justifyContent: "center", display: "flex"}}>
-          <a href="/" className="btn" style={{marginTop: "auto", marginBottom: "auto"}}>Home</a>
-          <a href="/darjeeling" className="btn" style={{marginTop: "auto", marginBottom: "auto"}}>Locations</a>
-          <a href="/" className="btn" style={{marginTop: "auto", marginBottom: "auto"}}>Help</a>
+        <div className="button-section mx-5" style={{ justifyContent: "center", display: "flex" }}>
+          <a href="/" className="btn" style={{ marginTop: "auto", marginBottom: "auto" }}>Home</a>
+          <a href="/darjeeling" className="btn" style={{ marginTop: "auto", marginBottom: "auto" }}>Locations</a>
+          <a href="/" className="btn" style={{ marginTop: "auto", marginBottom: "auto" }}>Help</a>
         </div>
-        {!user ? <div style={{ position: "absolute", right: 50, top: 30}}>
-          <button className="p-2 btn" style={{outline : "1px solid black"}} href="/"  onClick={handleSignIn}>
+        {!user ? <div style={{ position: "absolute", right: 50, top: 30 }}>
+          <button className="p-2 btn" style={{ outline: "1px solid black" }} href="/" onClick={handleSignIn}>
             Get Started
           </button>
         </div> : <div> </div>}
 
-      {loading ? <div /> : !user ? <div /> : (
-        <div style={{ position: "absolute", right: 50, top: 30}}>
-          <p>Welcome, {user.displayName}</p>
-          <button className="btn" onClick={handleSignOut} style={{position: "absolute", right: 0}}>
-            Sign out
-          </button>
-        </div>
-      )}
+        {loading ? <div /> : !user ? <div /> : (
+          <div style={{ position: "absolute", right: 50, top: 30 }}>
+            <p>Welcome, {user.displayName}</p>
+            <button className="btn" onClick={handleSignOut} style={{ position: "absolute", right: 0 }}>
+              Sign out
+            </button>
+          </div>
+        )}
       </div>
-      
+
     </div>
   );
 };

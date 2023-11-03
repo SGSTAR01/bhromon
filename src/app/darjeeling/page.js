@@ -6,6 +6,10 @@ import Time from './../assets/img/clock.png'
 import Airport from './../assets/img/airport.png'
 import Train from './../assets/img/train.png'
 import Kanchanjangha from './../assets/img/kanchanjangha.jpg'
+import Ghoom from './../assets/img/ghoom-monastery-darjeeling.png'
+import GhoomTrain from './../assets/img/batasia-loop-train.jpg'
+import TigerHill from './../assets/img/tigerhill.jpg'
+import Batasia from './../assets/img/batasia_loop_1024.jpg'
 import Hospital from './../assets/img/hospital.png'
 import Transport from './../assets/img/vehicles.png'
 import Store from './../assets/img/store.png'
@@ -34,8 +38,8 @@ const comp = getWeather().then((jsonData) => {
                 </div>
             </div>
         </div> */}
-        <div class={"card"}>
-            <div class="card-body">
+        <div className={"card"}>
+            <div className="card-body">
                 <div className='card-icon'>
                     <Image src={iconMap.get(jsonData.weather[0].description)} height={50} />
                 </div>
@@ -67,7 +71,7 @@ export default function Darjeeling() {
                             {/* for  timing to visit*/}
                             <div className={"distance-airport"}>
                                 <div className="card">
-                                    <div class="card-body">
+                                    <div className="card-body">
                                         <div className='card-icon'>
                                             <Image src={Airport} className='card-icon-img' />
                                         </div>
@@ -82,7 +86,7 @@ export default function Darjeeling() {
                             {/* for  timing to visit*/}
                             <div className={"distance-railway"}>
                                 <div className="card">
-                                    <div class="card-body">
+                                    <div className="card-body">
                                         <div className='card-icon'>
                                             <Image src={Train} className='card-icon-img' />
                                         </div>
@@ -97,7 +101,7 @@ export default function Darjeeling() {
                             {/* for  timing to visit*/}
                             <div className={"visit-timing"}>
                                 <div className="card">
-                                    <div class="card-body">
+                                    <div className="card-body">
                                         <div className='card-icon'>
                                             <Image src={Time} className='card-icon-img' />
                                         </div>
@@ -123,9 +127,9 @@ export default function Darjeeling() {
                     <article className='container'>
                         <div className='body-hill'>
                             <div className='card'>
-                                <div class="card-body">
+                                <div className="card-body">
                                     <div className='card-icon'>
-                                        <Image src={Kanchanjangha} className='card-img-left' />
+                                        <Image src={GhoomTrain} className='card-img-left' />
                                     </div>
                                     <div className='card-text'>
                                         <h5 className="card-title"> Lorem Ipsum</h5>
@@ -152,11 +156,11 @@ export default function Darjeeling() {
                                 <div className="card-body">
                                     {/* inside card */}
                                     <div className='ghoom'>
-                                        <div class="card inside-card ">
-                                            <Image src={Kanchanjangha} class="card-img-top" alt="..." />
-                                            <div class="card-body-inside">
-                                                <h5 class="card-title">BATASHIA LOOP</h5>
-                                                <p class="card-text">
+                                        <div className="card inside-card ">
+                                            <Image src={Batasia} className="card-img-top" alt="..." />
+                                            <div className="card-body-inside">
+                                                <h5 className="card-title">BATASHIA LOOP</h5>
+                                                <p className="card-text">
                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                                     sed do eiusmod tempor incididunt ut labore et dolore magna
                                                     aliqua. Dui id ornare arcu odio ut sem.
@@ -165,11 +169,11 @@ export default function Darjeeling() {
                                         </div>
                                     </div>
                                     <div className='ghoom'>
-                                        <div class="card inside-card ">
-                                            <Image src={Kanchanjangha} class="card-img-top" alt="..." />
-                                            <div class="card-body-inside">
-                                                <h5 class="card-title">GHOOM</h5>
-                                                <p class="card-text">
+                                        <div className="card inside-card ">
+                                            <Image src={Ghoom} className="card-img-top" alt="..." />
+                                            <div className="card-body-inside">
+                                                <h5 className="card-title">GHOOM</h5>
+                                                <p className="card-text">
                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                                     sed do eiusmod tempor incididunt ut labore et dolore magna
                                                     aliqua. Dui id ornare arcu odio ut sem.
@@ -178,11 +182,11 @@ export default function Darjeeling() {
                                         </div>
                                     </div>
                                     <div className='ghoom'>
-                                        <div class="card inside-card ">
-                                            <Image src={Kanchanjangha} class="card-img-top" alt="..." />
-                                            <div class="card-body-inside">
-                                                <h5 class="card-title">TIGER HILL</h5>
-                                                <p class="card-text">
+                                        <div className="card inside-card ">
+                                            <Image src={TigerHill} className="card-img-top" alt="..." />
+                                            <div className="card-body-inside">
+                                                <h5 className="card-title">TIGER HILL</h5>
+                                                <p className="card-text">
                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                                     sed do eiusmod tempor incididunt ut labore et dolore magna
                                                     aliqua. Dui id ornare arcu odio ut sem.
@@ -210,7 +214,9 @@ export default function Darjeeling() {
                                         <Image src={Hospital} className='over-map-icon' />
                                     </div>
                                     <div className='transport'>
-                                        <Image src={Transport} className='over-map-icon' />
+                                        <abbr title='Tool Tip'>
+                                            <Image src={Transport} className='over-map-icon' />
+                                        </abbr>
                                     </div>
                                     <div className='popular-store'>
                                         <Image src={Store} className='over-map-icon' />
