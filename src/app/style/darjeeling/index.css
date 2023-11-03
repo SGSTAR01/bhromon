@@ -20,9 +20,11 @@
     position: relative;
     z-index: 0;
 }
-.hero .right-group{
+
+.hero .right-group {
     display: flex;
 }
+
 .hero .weather {
     position: absolute;
     top: 0;
@@ -214,7 +216,7 @@ article .top-place .card {
 article .top-place .card .card-header {
     /* background: none; */
     border: none;
-    font-size: 38px;
+    font-size: 32px;
 }
 
 article .top-place .card .card-body {
@@ -258,7 +260,7 @@ article .map-area .card {
 article .map-area .card .card-header {
     /* background: none; */
     border: none;
-    font-size: 38px;
+    font-size: 32px;
 }
 
 article .map-area .card .card-body {
@@ -270,6 +272,7 @@ article .map-area .card .card-body {
 
 article .map-area .card .card-body iframe {
     /* border: 2px solid red; */
+    margin-top: 1rem;
     width: 90%;
     height: 70vh;
     border-radius: 10px;
@@ -339,18 +342,79 @@ article .map-area .card-body .over-map-icon {
 
 article .user {
     margin-top: 4rem;
+    margin-bottom: 2rem;
 }
 
 article .user .card {
     border: none;
+    margin-top: 2rem;
 }
 
 article .user .card .card-header {
     border: none;
-    font-size: 38px;
+    font-size: 32px;
 
+}
+
+article .user .card .card-body {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    border-radius: 20px;
+
+}
+
+article .user .card .card-body .card .card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+article .user .card .card-body .card {
+    display: flex;
+    /* border: 2px solid red; */
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px gray;
+
+}
+
+article .user .card .card-body .card .card-icon .card-img-left {
+    /* display: flex; */
+    height: 6rem;
+    width: 6rem;
+    margin-right: 2rem;
+
+}
+
+article .user .card .card-body .card .card-text {
+    padding: 4px;
+}
+
+article .user .card .card-body .card .card-text .card-text-inside {
+    text-align: justify;
+    margin-top: 1.6rem;
+    color: gray;
 }
 
 abbr {
     cursor: pointer;
+}
+
+footer {
+    width: auto;
+    height: auto;
+    background: #353535;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 1rem;
+}
+
+footer h4 {
+    background: none;
+    color: #fff;
+    font-size: 22px;
 }
