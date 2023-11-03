@@ -232,15 +232,23 @@ article .top-place .card .card-body .inside-card .card-img-top {
 article .top-place .card .card-body .ghoom {
     width: 22rem;
     height: auto;
+
 }
 
+/* .ghoom .inside-card .card-body-inside .card-text{} */
 article .top-place .card .card-body .inside-card {
     box-shadow: 3px 5px 8px gray;
     padding: 1rem;
+    /* border: 1px solid red; */
+    height: 38rem;
+    /* overflow: auto; */
 }
 
 article .top-place .card .card-body .inside-card .card-body-inside {
     margin-top: 2rem;
+    overflow-y: auto;
+    text-align: justify;
+    padding: 4px;
 }
 
 article .top-place .card .card-footer {

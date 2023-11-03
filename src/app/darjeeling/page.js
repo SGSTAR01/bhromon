@@ -77,7 +77,7 @@ export default function Darjeeling() {
                                     <div className="card-text">
                                         <h5 className="card-title">DISTANCE FROM AIRPORT</h5>
                                         <h6 className="card-subtitle mb-2 text-body-secondary">
-                                            30 KMs</h6>
+                                            62.8 KMs</h6>
                                     </div>
                                 </div>
                             </div>
@@ -92,7 +92,7 @@ export default function Darjeeling() {
                                     <div className="card-text">
                                         <h5 className="card-title">DISTANCE FROM RAILWAY</h5>
                                         <h6 className="card-subtitle mb-2 text-body-secondary">
-                                            30 KMs</h6>
+                                            73.1 KMs</h6>
                                     </div>
                                 </div>
                             </div>
@@ -132,16 +132,18 @@ export default function Darjeeling() {
                                     <Image src={GhoomTrain} className='card-img-left' />
                                 </div>
                                 <div className='card-text'>
-                                    <h5 className="card-title"> Lorem Ipsum</h5>
+                                    <h5 className="card-title"> Darjeeling </h5>
                                     <h6 className="card-subtitle mb-2 text-body-secondary">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                        sed do eiusmod tempor incididunt ut labore et dolore
-                                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                        exercitation ullamco laboris nisi ut aliquip ex ea
-                                        commodo consequat. Duis aute irure dolor in reprehenderit
-                                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                                        qui officia deserunt mollit anim id est laborum.
+                                        A picturesque hill station located in the Indian state of West Bengal,
+                                        is renowned for its breathtaking beauty and cultural richness.
+                                        Nestled in the Lesser Himalayas at an altitude of about 6,000 feet,
+                                        this enchanting town offers a serene escape from the bustling urban life.
+
+                                        Darjeeling's natural beauty is equally captivating. The rolling hills,
+                                        dense forests, and the backdrop of the snow-capped Kanchenjunga
+                                        mountain create a mesmerizing panorama. The Darjeeling Himalayan Railway,
+                                        a UNESCO World Heritage Site,
+                                        offers a nostalgic ride through the town's hilly terrain.
                                     </h6>
                                 </div>
                             </div>
@@ -161,9 +163,7 @@ export default function Darjeeling() {
                                         <div className="card-body-inside">
                                             <h5 className="card-title">BATASHIA LOOP</h5>
                                             <p className="card-text">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                                sed do eiusmod tempor incididunt ut labore et dolore magna
-                                                aliqua. Dui id ornare arcu odio ut sem.
+                                                At the centre of Batasia Loop a War Memorial stands. This memorial was constructed by the District Sainik Board, Darjeeling in commemoration of the brave Gorkha Soldiers, who sacrificed their life to protect the sovereignty of the Nation since independence. This memorial was sanctified on 22nd March, 1995.
                                             </p>
                                         </div>
                                     </div>
@@ -174,9 +174,7 @@ export default function Darjeeling() {
                                         <div className="card-body-inside">
                                             <h5 className="card-title">GHOOM</h5>
                                             <p className="card-text">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                                sed do eiusmod tempor incididunt ut labore et dolore magna
-                                                aliqua. Dui id ornare arcu odio ut sem.
+                                                Ghum (also spelt Ghoom) is a small hilly neighbourhood in the Darjeeling Himalayan hill region of West Bengal, India. It comes under ward number one of the Darjeeling Municipality. Ghum railway station of the Darjeeling Himalayan Railway is the highest railway station in India. It is situated at an altitude of 2,258 metres (7,407 ft).
                                             </p>
                                         </div>
                                     </div>
@@ -187,9 +185,9 @@ export default function Darjeeling() {
                                         <div className="card-body-inside">
                                             <h5 className="card-title">TIGER HILL</h5>
                                             <p className="card-text">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                                sed do eiusmod tempor incididunt ut labore et dolore magna
-                                                aliqua. Dui id ornare arcu odio ut sem.
+                                                At sunrise, the peaks of Kanchenjunga are illuminated before the sun is seen at lower elevations. From Tiger Hill, Mount Everest (8848 m) is just visible. Kanchenjunga (8598 m) looks higher than Mt. Everest, owing to the curvature of the Earth, as it is several miles closer than Everest. The distance in a straight line from Tiger Hill to Everest is 107 miles (172 km).
+                                                On a clear day, Kurseong is visible to the south and in the distance, along with Teesta River, Mahananda River, Balason River and Mechi River meandering down to the south. Chumal Rhi mountain of Tibet, 84 miles (135 km) away, is visible over the Chola Range
+                                                Senchel Wildlife Sanctuary is close to Tiger Hill.
                                             </p>
                                         </div>
                                     </div>
@@ -240,19 +238,16 @@ export default function Darjeeling() {
                                             <Image src={User} className='card-img-left' />
                                         </div>
                                         <div className='card-text' id='card-text'>
-                                            <h5 className="card-title"> Lorem Ipsum</h5>
+                                            <h5 className="card-title"> Subham Ghosh </h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary">
                                                 5 seconds ago
                                             </h6>
                                             <p className='card-text-inside'>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                                sed do eiusmod tempor incididunt ut labore et dolore
-                                                magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                                exercitation ullamco laboris nisi ut aliquip ex ea
-                                                commodo consequat. Duis aute irure dolor in reprehenderit
-                                                in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                                Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                                                qui officia deserunt mollit anim id est laborum.
+                                                Loved my visit and experience there
+                                                Amazing view of Kanchenjunga and the sunrise we got from there
+                                                Will cherish the moment for lifetime.
+                                                <br/>
+                                                Lovely place to see the sleeping Buddha. Kanchenjunga view is awesome. Lovely coffee to accompany. Must visit place
                                             </p>
                                         </div>
                                     </div>
