@@ -19,7 +19,7 @@ import User from './../assets/img/profile.png'
 import iconMap from '../consts'
 
 const getWeather = async () => {
-    const response = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=27.0380421&lon=88.262847&units=metric&appid=772d63bf896d0e4db07e363ba179e12c")
+    const response = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=27.0380421&lon=88.262847&units=metric&appid=[API_KEY_HERE]")
     const responseString = await response.text();
     const parsedJson = JSON.parse(responseString);
     console.log(parsedJson);
