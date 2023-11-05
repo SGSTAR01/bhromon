@@ -1,3 +1,4 @@
+'use client'
 import hill from './../assets/img/hill-black.svg'
 import './../style/darjeeling/index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
